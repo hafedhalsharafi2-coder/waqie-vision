@@ -3,156 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="تواصل معنا - واقع الرؤية">
-    <title>تواصل معنا - واقع الرؤية</title>
+    <title>واقع الرؤية | تواصل معنا</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <h1 class="logo">واقع الرؤية</h1>
-                <p class="tagline">صحيفة إلكترونية متخصصة في رؤية السعودية 2030</p>
-            </div>
-        </div>
+
+    <header>
+        <h1>واقع الرؤية</h1>
+        <p>صحيفة إلكترونية تتابع مشاريع رؤية السعودية 2030 وتشرح أثرها على المجتمع والحياة اليومية</p>
     </header>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <ul class="nav-menu">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="projects.html">مشاريع الرؤية</a></li>
-                <li><a href="economy.html">الاقتصاد والعمل</a></li>
-                <li><a href="technology.html">التقنية والابتكار</a></li>
-                <li><a href="quality.html">جودة الحياة</a></li>
-                <li><a href="contact.html" class="active">تواصل معنا</a></li>
-            </ul>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="projects.html">مشاريع الرؤية</a></li>
+            <li><a href="economy.html">الاقتصاد</a></li>
+            <li><a href="technology.html">التقنية</a></li>
+            <li><a href="quality.html">جودة الحياة</a></li>
+            <li><a href="contact.html" class="active">تواصل معنا</a></li>
+        </ul>
     </nav>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
-            <!-- Page Title -->
-            <h2 class="page-title">تواصل معنا</h2>
+    <main>
+        <div class="article-header">
+            <span class="editorial-label">تواصل معنا</span>
+            <h1>صوتك جزء مهم من بناء الرؤية</h1>
+        </div>
 
-            <!-- Contact Introduction -->
-            <section class="contact-intro">
-                <p>نحن نرحب بملاحظاتك واقتراحاتك وأسئلتك حول محتواتنا أو الرؤية بشكل عام. استخدم النموذج أدناه للتواصل معنا، وسيعود إليك الفريق في أقرب وقت ممكن.</p>
-            </section>
+        <div class="contact-container">
+            <p style="text-align: center; margin-bottom: 30px; color: var(--text-light); font-size: 1.1rem;">
+                يسعدنا في هيئة تحرير صحيفة "واقع الرؤية" استقبال مقترحاتكم، استفساراتكم، ومشاركاتكم الصحفية. نرجو تعبئة النموذج أدناه وسيقوم فريقنا بالتواصل معكم.
+            </p>
 
-            <!-- Contact Form -->
-            <section class="contact-form-section">
-                <h3>نموذج التواصل</h3>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">الاسم *</label>
-                        <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">البريد الإلكتروني *</label>
-                        <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">الموضوع *</label>
-                        <input type="text" id="subject" name="subject" placeholder="موضوع رسالتك" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">الرسالة *</label>
-                        <textarea id="message" name="message" placeholder="اكتب رسالتك هنا..." rows="6" required></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">إرسال الرسالة</button>
-                </form>
-                <div id="successMessage" class="success-message" style="display: none;">
-                    <p>✓ شكرًا لك! تم استلام رسالتك بنجاح. سيعود إليك الفريق قريبًا.</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل:</label>
+                    <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكريم هنا">
                 </div>
-            </section>
 
-            <!-- Team Section -->
-            <section class="team-section">
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required placeholder="مثال: example@domain.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">الموضوع:</label>
+                    <input type="text" id="subject" name="subject" required placeholder="عنوان رسالتك أو استفسارك">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">الرسالة:</label>
+                    <textarea id="message" name="message" rows="7" required placeholder="اكتب تفاصيل رسالتك، اقتراحك، أو استفسارك بوضوح هنا..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">إرسال الرسالة إلى فريق التحرير</button>
+            </form>
+
+            <div class="team-section">
                 <h3>فريق العمل - المجموعة العاشرة</h3>
-                <p class="team-intro">هذا المشروع من تطوير مجموعة من الطالبات المتحمسات للصحافة الرقمية والشأن السعودي. نعمل بجد لتقديم محتوى متخصص وموثوق يخدم مجتمعنا.</p>
-                
-                <div class="team-members">
-                    <div class="team-member">
-                        <div class="member-avatar">ح</div>
-                        <h4>حلا المطيري</h4>
-                        <p>محرر رئيسي ومتخصص في الشأن الاقتصادي</p>
-                    </div>
-
-                    <div class="team-member">
-                        <div class="member-avatar">ع</div>
-                        <h4>العنود السحيمي</h4>
-                        <p>محررة متخصصة في الشأن الاجتماعي والثقافي</p>
-                    </div>
-
-                    <div class="team-member">
-                        <div class="member-avatar">س</div>
-                        <h4>سميه خلاف</h4>
-                        <p>محررة متخصصة في التقنية والابتكار</p>
-                    </div>
-
-                    <div class="team-member">
-                        <div class="member-avatar">ر</div>
-                        <h4>ريم مشعان الحربي</h4>
-                        <p>محررة متخصصة في المشاريع الكبرى والتطور العمراني</p>
-                    </div>
-
-                    <div class="team-member">
-                        <div class="member-avatar">و</div>
-                        <h4>رواف الرحيلي</h4>
-                        <p>محررة ومصممة الموقع الإلكتروني</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- About the Newspaper -->
-            <section class="about-newspaper">
-                <h3>عن صحيفة واقع الرؤية</h3>
-                <p>صحيفة واقع الرؤية تُعنى بمتابعة وتحليل مشاريع رؤية السعودية 2030 وتأثيراتها على المجتمع والاقتصاد والتقنية. نؤمن بدور الصحافة المتخصصة في توثيق الأحداث وشرح التأثيرات الحقيقية للسياسات والمشاريع الحكومية.</p>
-                <p>رسالتنا هي تقديم محتوى موثوق وعميق يجسر الفجوة بين الأرقام والإحصائيات والحياة اليومية للمواطن السعودي. نسعى للابتعاد عن العمومية والسطحية نحو التحليل المعمق والقصص التي توضح الأثر الحقيقي.</p>
-            </section>
+                <p class="team-desc">تم التخطيط التحريري، وتصميم واجهات المستخدم، والتطوير البرمجي لهذا المشروع من قبل فريق العمل المكون من:</p>
+                <ul class="team-list">
+                    <li>حلا المطيري</li>
+                    <li>العنود السحيمي</li>
+                    <li>سميه خلاف</li>
+                    <li>ريم مشعان الحربي</li>
+                    <li>رواف الرحيلي</li>
+                </ul>
+            </div>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>واقع الرؤية</h4>
-                    <p>صحيفة إلكترونية متخصصة في رؤية السعودية 2030</p>
-                </div>
-                <div class="footer-section">
-                    <h4>فريق العمل - المجموعة العاشرة</h4>
-                    <ul>
-                        <li>حلا المطيري</li>
-                        <li>العنود السحيمي</li>
-                        <li>سميه خلاف</li>
-                        <li>ريم مشعان الحربي</li>
-                        <li>رواف الرحيلي</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>الروابط السريعة</h4>
-                    <ul>
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="projects.html">مشاريع الرؤية</a></li>
-                        <li><a href="economy.html">الاقتصاد والعمل</a></li>
-                        <li><a href="technology.html">التقنية والابتكار</a></li>
-                        <li><a href="quality.html">جودة الحياة</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 واقع الرؤية - جميع الحقوق محفوظة</p>
-            </div>
+
+    <footer>
+        <h3>واقع الرؤية</h3>
+        <p>جميع الحقوق محفوظة &copy; 2026 | مشروع صحيفة إلكترونية متكاملة تتابع إنجازات التحول الوطني</p>
+        <div class="footer-team">
+            <p><strong>فريق العمل - المجموعة العاشرة:</strong></p>
+            <p>حلا المطيري | العنود السحيمي | سميه خلاف | ريم مشعان الحربي | رواف الرحيلي</p>
         </div>
     </footer>
 
